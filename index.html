@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akhila Pasupunuri • Portfolio</title>
+  <meta name="description" content="Portfolio of Akhila Pasupunuri: social projects, skills, and technical work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#home" class="logo">AP</a>
+      <div class="nav-links">
+        <a href="#social-projects">Social</a>
+        <a href="#technical">Technical</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+      <div class="hero-inner container">
+        <div class="hero-media fade-in">
+          <img src="images/akhilaprofile.JPEG" alt="Portrait of Akhila Pasupunuri" class="hero-avatar" />
+        </div>
+        <div class="hero-copy">
+          <h1 class="hero-title fade-in">Akhila Pasupunuri</h1>
+          <p class="hero-subtitle fade-in">Developer • Builder • Community Minded</p>
+          <p class="hero-intro fade-in">
+            Hey you! My name is Akhila and I'm a Computer Science major at the University of Maryland. I love building thoughtful initiatives that make a difference. 
+          </p>
+          <div class="hero-cta fade-in">
+            <a href="#social-projects" class="btn primary">Social Ventures</a>
+            <a href="#technical" class="btn ghost">Fun Coding Projects</a>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Social Projects Carousel -->
+    <section id="social-projects" class="section social">
+      <div class="container social-initiatives">
+        <h2 class="fade-in">Social Ventures.</h2>
+        <p class="fade-in">Something I am extremely passionate about is dedicating my time towards addressing causes that I find extremely important, such as educational equity and strengthening civic engagement.</p>
+      </div>
+
+      <div class="carousel container">
+        <button class="carousel-btn prev" aria-label="Previous slide">&#10094;</button>
+
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="socialTrack">
+            <!-- Slides will be injected by script.js from data -->
+          </div>
+        </div>
+
+        <button class="carousel-btn next" aria-label="Next slide">&#10095;</button>
+      </div>
+
+      <div class="carousel-indicators container">
+        <div id="carouselProgress" class="carousel-progress" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- Technical Section: Left (Multilingual) 30% / Right (Coding Projects) 70% -->
+    <section id="technical" class="section technical">
+      <div class="container technical-inner">
+        <div class="tech-left fade-in">
+          <h2 class="tech-title">Multilingual.</h2>
+          <div class="skills-grid" id="skillsGrid"></div>
+        </div>
+        <div class="tech-right fade-in">
+          <h2 class="tech-title">Coding Projects.</h2>
+          <p class="fade-in">I have experience in technical projects that can help me scale my social ventures.</p>
+          <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Akhila Pasupunuri</span>
+      <a class="footer-link" href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
