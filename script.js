@@ -96,11 +96,7 @@ function renderSocialCarousel() {
     const slide = el('div', 'slide');
 
     const media = el('div', 'slide-media');
-    // Check if mobile and only show first image, otherwise show all 4
-    const isMobile = window.innerWidth <= 900;
-    const imagesToShow = isMobile ? project.images.slice(0, 1) : project.images.slice(0, 4);
-
-    imagesToShow.forEach(src => {
+    project.images.slice(0, 4).forEach(src => {
       const img = document.createElement('img');
       img.src = src;
       img.alt = project.name;
@@ -319,11 +315,6 @@ function initScrollAnimations() {
     observer.observe(el);
   });
 }
-
-// Handle window resize to update carousel images
-window.addEventListener('resize', () => {
-  renderSocialCarousel();
-});
 
 // Init
 window.addEventListener('DOMContentLoaded', () => {
