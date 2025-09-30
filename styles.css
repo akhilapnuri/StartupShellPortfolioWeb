@@ -1,3 +1,4 @@
+
 :root {
   --bg: #a3b899;
   --bg-soft: #a3b899;
@@ -515,4 +516,74 @@ body {
   .social-initiatives p {
     max-width: 100%;
   }
+}
+
+/* Tabs Styles */
+.tabs-container {
+  margin-top: 16px;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  position: relative; /* Add this */
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+  position: relative; /* Add this */
+}
+
+.tab-button:hover {
+  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.tab-button.active {
+  opacity: 1;
+  background: var(--primary);
+  color: var(--text);
+}
+
+/* Underline indicator */
+.tab-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #f6e7a1; /* Using your pastel yellow color for visibility */
+  border-radius: 2px 2px 0 0;
+}
+
+.tab-content {
+  position: relative;
+  min-height: 200px;
+}
+
+.tab-pane {
+  display: none;
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tab-pane strong {
+  color: var(--text);
 }

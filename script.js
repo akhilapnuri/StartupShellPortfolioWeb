@@ -1,23 +1,39 @@
 // Data configuration — replace with your real content and images
 const socialProjects = [
-    {
-      name: "Children's Business Fair",
-      description: '<strong>Problem:</strong> Limited opportunities for children to build entrepreneurial skills, business knowledge, and confidence.<br><br><strong>Solution:</strong> Organized annual summer programs combining hands-on workshops—where children learned how to create and market a business—with a full-day (9-hour) community marketplace. At the event, participants set up booths at a town center to pitch and sell their products, impacting 80+ children each year. Secured community sponsors, raised funds to support their ventures, and partnered with local political leaders to expand visibility.',
-      images: ['images/cbf.jpg', 'images/biz.png', 'images/biz2.png', 'images/biz3.png']
+  {
+    name: "Children's Business Fair",
+    tabs: {
+      about: '<strong>Problem:</strong> Limited opportunities for children to build entrepreneurial skills, business knowledge, and confidence.<br><br><strong>Solution:</strong> Organized annual summer programs combining hands-on workshops—where children learned how to create and market a business—with a full-day (9-hour) community marketplace. At the event, participants set up booths at a town center to pitch and sell their products, impacting 80+ children each year. Secured community sponsors, raised funds to support their ventures, and partnered with local political leaders to expand visibility.',
+      hardship: 'Organizing events for 80+ children required extensive coordination with parents, venues, and sponsors. Managing different age groups and ensuring safety while maintaining an engaging atmosphere was challenging. Weather uncertainties for outdoor events added additional complexity.',
+      takeaway: 'Learned the importance of community partnerships and how to scale educational initiatives. Developed strong project management and stakeholder communication skills. Realized the transformative power of hands-on learning experiences for young students.'
     },
+    images: ['images/cbf.jpg', 'images/biz.png', 'images/biz2.png', 'images/biz3.png']
+  },
   {
     name: 'Career and Technical Education Ambassador',
-    description: '<strong>Problem:</strong> Many teenagers lack guidance in exploring career paths and discovering activities that match their interests, creating a widespread gap in career and interest awareness.<br><br><strong>Solution:</strong> As 1 of 16 high school students across the Everett Public Schools district, I helped pioneer and launch the first-ever Career and Technical Education (CTE) Ambassadors program. Together, we reached 15,000+ students in grades 6–12 by organizing and leading workshops and networking fairs that connected peers with community partners and school programs. Worked directly with district officials, including the superintendent, to make the initiative possible.',
+    tabs: {
+      about: '<strong>Problem:</strong> Many teenagers lack guidance in exploring career paths and discovering activities that match their interests, creating a widespread gap in career and interest awareness.<br><br><strong>Solution:</strong> As 1 of 16 high school students across the Everett Public Schools district, I helped pioneer and launch the first-ever Career and Technical Education (CTE) Ambassadors program. Together, we reached 15,000+ students in grades 6–12 by organizing and leading workshops and networking fairs that connected peers with community partners and school programs. Worked directly with district officials, including the superintendent, to make the initiative possible.',
+      hardship: 'Coordinating with 15,000+ students across different schools required extensive planning and communication. Balancing this initiative with academic responsibilities was demanding. Gaining buy-in from school administrators and ensuring consistent program quality across multiple locations presented ongoing challenges.',
+      takeaway: 'Gained valuable experience in educational program development and large-scale event coordination. Learned how to effectively communicate with diverse stakeholders including students, educators, and district officials. Developed leadership skills in managing peer-to-peer educational initiatives.'
+    },
     images: ['images/cte.JPG', 'images/cte2.jpg', 'images/cte3.jpg', 'images/cte4.jpg']
   },
   {
     name: 'Computer Science Education',
-    description: '<strong>Problem:</strong> Many students lack direct access to computer science resources or lack an idea of where to start, even though it is a rapidly growing field that shapes nearly every career path. <br><br><strong>Solution:</strong> Established coding clubs at four local elementary and middle schools, teaching Python and object-oriented programming to students as young as 8. Coached two FIRST LEGO League teams to introduce robotics fundamentals to ages 8–13. Organized multi-school hackathons and field trips to the University of Washington\'s Paul Allen School of Computer Science & Engineering, where high school students engaged in hands-on CS activities. Impacted 105+.',
+    tabs: {
+      about: '<strong>Problem:</strong> Many students lack direct access to computer science resources or lack an idea of where to start, even though it is a rapidly growing field that shapes nearly every career path. <br><br><strong>Solution:</strong> Established coding clubs at four local elementary and middle schools, teaching Python and object-oriented programming to students as young as 8. Coached two FIRST LEGO League teams to introduce robotics fundamentals to ages 8–13. Organized multi-school hackathons and field trips to the University of Washington\'s Paul Allen School of Computer Science & Engineering, where high school students engaged in hands-on CS activities. Impacted 105+.',
+      hardship: 'Teaching complex programming concepts to young students required developing age-appropriate curriculum and teaching methods. Limited resources and equipment at some schools meant creative problem-solving was necessary. Maintaining student engagement and dealing with varying skill levels within the same class was challenging.',
+      takeaway: 'Discovered the importance of making technical education accessible and engaging for all age groups. Developed strong curriculum design and teaching skills. Learned how to adapt complex concepts for different learning styles and age ranges.'
+    },
     images: ['images/cs.jpg', 'images/cs2.jpg', 'images/cs3.jpg', 'images/cs4.JPEG']
   },
   {
     name: 'Political Media Bias Advocacy',
-    description: '<strong>Problem:</strong> Political polarization is one of today\'s most pressing challenges, with media coverage often amplifying divisions rather than bridging them.<br><br><strong>Solution:</strong> Collaborated with two fellow high school students and three PhD mentors to apply natural language processing techniques—such as topic modeling (LDA, Top2Vec) and sentiment analysis (BERT)—to examine how left- and right-leaning media outlets frame political events like rallies. Gained insight into how outlets frequently relied on adversarial framing, emphasizing criticism of opposing ideologies rather than promotion of their own, thereby reinforcing polarization. Got accepted to the National Conference for Undergraduate Research and presented at the Southern California Conference for Undergraduate Research, sharing insights on media literacy with 1,500 attendees from 80+ institutions.',
+    tabs: {
+      about: '<strong>Problem:</strong> Political polarization is one of today\'s most pressing challenges, with media coverage often amplifying divisions rather than bridging them.<br><br><strong>Solution:</strong> Collaborated with two fellow high school students and three PhD mentors to apply natural language processing techniques—such as topic modeling (LDA, Top2Vec) and sentiment analysis (BERT)—to examine how left- and right-leaning media outlets frame political events like rallies. Gained insight into how outlets frequently relied on adversarial framing, emphasizing criticism of opposing ideologies rather than promotion of their own, thereby reinforcing polarization. Got accepted to the National Conference for Undergraduate Research and presented at the Southern California Conference for Undergraduate Research, sharing insights on media literacy with 1,500 attendees from 80+ institutions.',
+      hardship: 'Learning and applying complex NLP techniques as a high school student required extensive self-study and mentorship. Analyzing large datasets and ensuring methodological rigor was challenging. Presenting research findings to academic audiences required developing confidence and clear communication skills.',
+      takeaway: 'Gained deep understanding of natural language processing and its applications in social science research. Developed strong analytical and research presentation skills. Learned how to collaborate effectively with academic mentors and present complex findings to diverse audiences.'
+    },
     images: ['images/ucsb3.jpg', 'images/ucsb2.WEBP']
   }
 ];
@@ -69,13 +85,14 @@ function el(tag, className, innerHTML) {
 }
 
 // Render Social Projects Carousel
+// Render Social Projects Carousel
 function renderSocialCarousel() {
   const track = document.getElementById('socialTrack');
   const progressRoot = document.getElementById('carouselProgress');
   if (!track || !progressRoot) return;
 
   track.innerHTML = '';
-  socialProjects.forEach(project => {
+  socialProjects.forEach((project, index) => {
     const slide = el('div', 'slide');
 
     const media = el('div', 'slide-media');
@@ -88,13 +105,64 @@ function renderSocialCarousel() {
 
     const copy = el('div', 'slide-copy');
     copy.appendChild(el('h3', '', project.name));
-    const desc = el('p', 'card-desc');
-    desc.innerHTML = project.description;
-    copy.appendChild(desc);
+    
+    // Create tabs container
+    const tabsContainer = el('div', 'tabs-container');
+    
+    // Create tab buttons
+    const tabButtons = el('div', 'tab-buttons');
+    const aboutBtn = el('button', 'tab-button active', 'About');
+    const hardshipBtn = el('button', 'tab-button', 'Hardship');
+    const takeawayBtn = el('button', 'tab-button', 'Takeaway');
+    
+    aboutBtn.setAttribute('data-tab', 'about');
+    hardshipBtn.setAttribute('data-tab', 'hardship');
+    takeawayBtn.setAttribute('data-tab', 'takeaway');
+    
+    tabButtons.appendChild(aboutBtn);
+    tabButtons.appendChild(hardshipBtn);
+    tabButtons.appendChild(takeawayBtn);
+    
+    // Create tab content
+    const tabContent = el('div', 'tab-content');
+    const aboutContent = el('div', 'tab-pane active');
+    aboutContent.innerHTML = project.tabs.about;
+    
+    const hardshipContent = el('div', 'tab-pane');
+    hardshipContent.innerHTML = project.tabs.hardship;
+    
+    const takeawayContent = el('div', 'tab-pane');
+    takeawayContent.innerHTML = project.tabs.takeaway;
+    
+    aboutContent.id = `about-${index}`;
+    hardshipContent.id = `hardship-${index}`;
+    takeawayContent.id = `takeaway-${index}`;
+    
+    tabContent.appendChild(aboutContent);
+    tabContent.appendChild(hardshipContent);
+    tabContent.appendChild(takeawayContent);
+    
+    // Add tab functionality
+    [aboutBtn, hardshipBtn, takeawayBtn].forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all buttons and panes
+        tabButtons.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+        tabContent.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+        
+        // Add active class to clicked button and corresponding pane
+        btn.classList.add('active');
+        const tabName = btn.getAttribute('data-tab');
+        const paneId = `${tabName}-${index}`;
+        document.getElementById(paneId).classList.add('active');
+      });
+    });
+    
+    tabsContainer.appendChild(tabButtons);
+    tabsContainer.appendChild(tabContent);
+    copy.appendChild(tabsContainer);
 
     slide.appendChild(media);
     slide.appendChild(copy);
-
     track.appendChild(slide);
   });
 
