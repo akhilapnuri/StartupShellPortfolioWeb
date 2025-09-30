@@ -358,12 +358,22 @@ body {
 
 /* Skills playground */
 /* Skills grid */
-.skills-grid {
+/* Technical Section */
+.tech-title {
+  margin: 0 0 12px;
+  font-size: 44px;
+  color: var(--title-outside);
+}
+
+/* Skills grid positioning with more space */
+#technical .skills-grid {
+  margin: 50px 0 50px 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 22px;
   align-items: center;
 }
+
 .skill-logo {
   display: grid;
   place-items: center;
@@ -379,33 +389,14 @@ body {
   transform: scale(1.12);
 }
 
-/* Projects grid */
+/* Projects grid with adjusted top margin */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 18px;
-}
-/* Technical combined layout */
-.technical-inner {
-  display: grid;
-  grid-template-columns: 0.3fr 0.7fr;
-  gap: 24px;
-  align-items: start;
-}
-.tech-title {
-  margin: 0 0 12px;
-  font-size: 44px;
-  color: var(--title-outside);
-}
-.tech-left .skills-grid {
-  margin-top: 12px;
+  margin-top: 40px;
 }
 
-@media (max-width: 900px) {
-  .technical-inner {
-    grid-template-columns: 1fr;
-  }
-}
 
 .card {
   position: relative;
@@ -586,4 +577,13 @@ body {
 
 .tab-pane strong {
   color: var(--text);
+}
+
+.technical-description {
+  margin: 0;
+  color: var(--desc-outside);
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.6;
+  max-width: 70%;
 }
