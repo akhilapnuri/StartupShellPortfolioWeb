@@ -302,25 +302,25 @@ body {
   top: 20px;
   height: 50px;
   width: 50px;
-  border-radius: 12px;
-  background: var(--card);
-  border: 1px solid var(--border);
-  color: var(--text);
+  background: white;
+  border: 2px solid var(--primary); /* var(--primary) is #364237 - your dark green */
+  color: var(--primary); /* Dark green arrow color */
   cursor: pointer;
-  font-size: 20px;
+  font-size: 32px;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 50%; /* Makes them circular */
+  opacity: 0.9;
 }
 
 .carousel-btn:hover {
   transform: scale(1.1);
-  background: var(--primary-600);
-  border-color: var(--border);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  background: var(--primary); /* Dark green background on hover */
+  color: white; /* White arrow on hover */
 }
 
 .carousel-btn.prev {
