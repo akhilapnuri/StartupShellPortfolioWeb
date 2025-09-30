@@ -493,19 +493,162 @@ body {
   .hero-inner {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 24px;
   }
+  
   .hero-avatar {
+    width: 280px;
+    height: 280px;
     margin: 0 auto;
   }
+  
+  .hero-title {
+    font-size: 48px;
+  }
+  
+  .hero-subtitle {
+    font-size: 20px;
+  }
+  
+  .hero-intro {
+    font-size: 18px;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* Social section */
+  .social-initiatives h2 {
+    font-size: 36px;
+  }
+  
+  .social-initiatives p {
+    font-size: 18px;
+    max-width: 100%;
+  }
+  
+  /* Carousel fixes */
   .slide {
     grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
   }
+  
   .slide-media {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 120px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+    gap: 12px;
   }
-  .social-initiatives p {
+  
+  .carousel-btn {
+    top: 10px;
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+  }
+  
+  .carousel-btn.prev {
+    left: 10px;
+  }
+  
+  .carousel-btn.next {
+    right: 10px;
+  }
+  
+  /* Technical section */
+  .tech-title {
+    font-size: 36px;
+  }
+  
+  .technical-description {
+    font-size: 18px;
     max-width: 100%;
+  }
+  
+  #technical .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 16px;
+    margin: 30px 0 30px 0;
+  }
+  
+  .skill-logo img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 30px;
+  }
+  
+  /* Tabs */
+  .tab-buttons {
+    flex-wrap: wrap;
+  }
+  
+  .tab-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
+  .tab-content {
+    min-height: 150px;
+  }
+  
+  /* Navigation */
+  .nav-links a {
+    font-size: 16px;
+    margin-left: 12px;
+    padding: 6px 12px;
+  }
+  
+  .logo {
+    font-size: 18px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+  }
+  
+  .hero-avatar {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  .social-initiatives h2,
+  .tech-title {
+    font-size: 32px;
+  }
+  
+  #technical .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .carousel-viewport {
+    min-height: 500px;
+  }
+  
+  .slide {
+    min-height: 500px;
   }
 }
 
