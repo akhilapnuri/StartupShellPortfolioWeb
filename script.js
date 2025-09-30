@@ -86,10 +86,27 @@ function el(tag, className, innerHTML) {
 
 // Render Social Projects Carousel
 // Render Social Projects Carousel
+
+// Mobile detection
+function isMobileDevice() {
+  return (window.innerWidth <= 900) || 
+         (navigator.userAgent.match(/Android/i) ||
+          navigator.userAgent.match(/webOS/i) ||
+          navigator.userAgent.match(/iPhone/i) ||
+          navigator.userAgent.match(/iPad/i) ||
+          navigator.userAgent.match(/iPod/i) ||
+          navigator.userAgent.match(/BlackBerry/i) ||
+          navigator.userAgent.match(/Windows Phone/i));
+}
+
 function renderSocialCarousel() {
+
+  if (isMobileDevice()) return; // Don't render on mobile
+  
   const track = document.getElementById('socialTrack');
   const progressRoot = document.getElementById('carouselProgress');
   if (!track || !progressRoot) return;
+
 
   track.innerHTML = '';
   socialProjects.forEach((project, index) => {
@@ -217,8 +234,11 @@ function renderSocialCarousel() {
 
 // Render Skills Grid (static with hover enlarge)
 function renderSkills() {
+  if (isMobileDevice()) return; // Don't render on mobile
+  
   const grid = document.getElementById('skillsGrid');
   if (!grid) return;
+  
   grid.innerHTML = '';
 
   const logos = [
@@ -246,8 +266,12 @@ function renderSkills() {
 
 // Render Technical Projects Grid
 function renderProjects() {
+
+  if (isMobileDevice()) return; // Don't render on mobile
+  
   const grid = document.getElementById('projectsGrid');
   if (!grid) return;
+
   grid.innerHTML = '';
   techProjects.forEach(p => {
     const card = el('div', 'card');

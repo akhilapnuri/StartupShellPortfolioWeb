@@ -730,3 +730,89 @@ body {
   line-height: 1.6;
   max-width: 70%;
 }
+
+/* Mobile Message Styles */
+.mobile-message {
+  display: none;
+  margin: 40px 0;
+  width: 100%;
+}
+
+.mobile-message-content {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 40px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  width: 90%; /* Use percentage for better responsiveness */
+}
+
+.mobile-message h3 {
+  color: var(--text);
+  margin: 0 0 16px;
+  font-size: 24px;
+}
+
+.mobile-message p {
+  color: var(--text);
+  margin: 0 0 16px;
+  line-height: 1.6;
+}
+
+.mobile-note {
+  font-size: 14px;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+/* Desktop content - hidden on mobile by default */
+.desktop-content {
+  display: block;
+}
+
+/* Mobile styles */
+@media (max-width: 900px) {
+  .mobile-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Ensure consistent height */
+  }
+  
+  .desktop-content {
+    display: none;
+  }
+  
+  /* Adjust spacing for mobile */
+  .social {
+    padding-bottom: 60px;
+  }
+  
+  .technical {
+    padding-bottom: 60px;
+  }
+  
+  /* Ensure container doesn't interfere with centering */
+  .mobile-message.container {
+    width: 100%;
+    padding: 0 20px; /* Add some side padding */
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .mobile-message-content {
+    padding: 30px 15px;
+    width: 95%; /* Even wider on very small screens */
+  }
+  
+  .mobile-message h3 {
+    font-size: 20px;
+  }
+  
+  .mobile-message p {
+    font-size: 14px;
+  }
+}
