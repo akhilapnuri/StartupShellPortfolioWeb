@@ -48,7 +48,7 @@ const techProjects = [
     title: 'Political Media Bias Research',
     description: 'Research using topic modeling (BERT, LDA, Top2Vec) and sentiment analysis (BERT) with Python and Google Colab.',
     image: 'images/researchPic.JPEG',
-    download: 'researchDoc.pdf'
+    download: 'images/researchDoc.pdf'
   },
   {
     title: 'Finance Tracking App',
@@ -73,10 +73,22 @@ const techProjects = [
     description: 'Used Java to help program FIRST FRC Robotics competition robot, specifically developing its operator dashboard.',
     image: 'images/robot.jpeg',
     github: 'https://github.com/FRCTeam2910/2024CompetitionRobot'
+  },
+  {
+    title: 'TerpLabs Club',
+    description: 'Ongoing: Developing an apartment subleasing and roommate-matching platform for UMD students using Next.js and Tailwind CSS.',
+    image: 'images/terplabs.webp',
+    
+  },
+  {
+    title: 'App Dev Club',
+    description: "Ongoing: Building a personal financial planning tool for UMD's Financial Wellness Center (FWC) using React and Node.js.",
+    image: 'images/appdev.png',
+    
   }
 ];
 
-// Utility: safely create element
+// Utility: safely create element 
 function el(tag, className, innerHTML) {
   const e = document.createElement(tag);
   if (className) e.className = className;
