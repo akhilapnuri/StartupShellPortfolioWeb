@@ -52,17 +52,23 @@ const techProjects = [
     
   },
   {
-    title: 'Fundraiser Promotion Website',
-    description: 'Using HTML/CSS/JS specifically focusing on modern UI/UX design.',
-    image: 'images/website.jpeg',
-    github: 'https://github.com/akhilapnuri/cancercaregala-website'
-  },
-  {
     title: 'Political Media Bias Research',
     description: 'Research using topic modeling (BERT, LDA, Top2Vec) and sentiment analysis (BERT) with Python and Google Colab.',
     image: 'images/researchPic.JPEG',
     download: 'images/researchDoc.pdf'
   },
+  {
+    title: 'TerpLabs Club',
+    description: 'Ongoing: Developing an apartment subleasing and roommate-matching platform for UMD students using Next.js and Node.js.',
+    image: 'images/leasetudo.png',
+  },
+  {
+    title: 'Fundraiser Promotion Website',
+    description: 'Using HTML/CSS/JS specifically focusing on modern UI/UX design.',
+    image: 'images/website.jpeg',
+    github: 'https://github.com/akhilapnuri/cancercaregala-website'
+  },
+  
   {
     title: 'Finance Tracking App',
     description: 'Full-stack app using Swift and XCode.',
@@ -81,11 +87,6 @@ const techProjects = [
     description: 'Used Java to help program FIRST FRC Robotics competition robot, specifically developing its operator dashboard.',
     image: 'images/robot.jpeg',
     github: 'https://github.com/FRCTeam2910/2024CompetitionRobot'
-  },
-  {
-    title: 'TerpLabs Club',
-    description: 'Ongoing: Developing an apartment subleasing and roommate-matching platform for UMD students using Next.js and Tailwind CSS.',
-    image: 'images/leasetudo.png',
   }
   
 ];
