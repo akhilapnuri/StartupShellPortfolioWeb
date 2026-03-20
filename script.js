@@ -60,7 +60,7 @@ const techProjects = [
   {
     title: 'Kisses for Kyle (Cancer Foundation)',
     description: 'Ongoing: Developing full stack web app to match gift donors with cancer patients using React and Tanstack Start to serve 600+ families.',
-    image: 'images/k4k.png',
+    image: 'images/k4k.jpg',
   },
   {
     title: 'App Dev Club',
