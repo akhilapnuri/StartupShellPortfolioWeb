@@ -45,21 +45,31 @@ const skills = [
 
 const techProjects = [
   {
-    title: 'App Dev Club',
-    description: "Built an AR financial planning app for UMD's Financial Wellness Center using RealityKit, Swift, and SwiftUI.",
+    title: 'UMD Smith School of Business',
+    description: "Built an AR financial planning app for UMD's Financial Wellness Center using RealityKit, Swift, and SwiftUI. Working directly with associate dean Joseph Bailey to build a Flask mobile version to ship out to students.",
     image: 'images/appdev.png',
     download: 'https://drive.google.com/drive/folders/1ygcCPKzZNCiB3z-NypEVaVCTzE46f-5E?usp=sharing'
     
   },
   {
     title: 'Political Media Bias Research',
-    description: 'Research using topic modeling (BERT, LDA, Top2Vec) and sentiment analysis (BERT) with Python and Google Colab.',
+    description: 'Research using topic modeling (BERT, LDA, Top2Vec) and sentiment analysis (BERT) pipelines with Python and Google Colab.',
     image: 'images/researchPic.JPEG',
     download: 'images/researchDoc.pdf'
   },
   {
+    title: 'Kisses for Kyle (Cancer Foundation)',
+    description: 'Ongoing: Developing full stack web app to match gift donors with cancer patients using React and Tanstack Start to serve 600+ families.',
+    image: 'images/k4k.png',
+  },
+  {
+    title: 'App Dev Club',
+    description: 'Ongoing: Leading development of an iOS AR application using Swift, SwiftUI, and RealityKit for UMD’s Henson Day initiative, implementing location-based, Pokémon GO–style AR collectibles across campus. Working directly with Sammy Popat (faculty).',
+    image: 'images/appdev.png',
+  },
+  {
     title: 'TerpLabs Club',
-    description: 'Ongoing: Developing an apartment subleasing and roommate-matching platform for UMD students using Next.js and Node.js.',
+    description: 'Ongoing: Developing an apartment subleasing marketplace for UMD students using Next.js, Node.js, and MongoDB.',
     image: 'images/leasetudo.png',
   },
   {
